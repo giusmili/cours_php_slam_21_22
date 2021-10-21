@@ -40,12 +40,14 @@
 
 	</pre>
 	<?php
-		//include_once "./src/test_php.inc.php";
+		include_once "./src/test_php.inc.php";
 	?>
     <!-- footer -->
     <?php
         require_once "./src/footer.inc.php";
-    ?>
+
+	?>
+
 
 </body>
 </html>

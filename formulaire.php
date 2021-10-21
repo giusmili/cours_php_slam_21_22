@@ -21,21 +21,25 @@
         <?php
             include_once "./src/form.inc.php";
             
-            
         ?>
         <pre>
             <?php
-            //print $_SERVER['PHP_SELF'];
-               // print_r($_SERVER);
+            /*print $_SERVER['PHP_SELF'];
+              print_r($_SERVER);
+               $str = "<© W3Sçh°°¦§>";
+               echo "test ".htmlentities($str);*/
             ?>
         </pre>
    
     </main>
     <footer>
         <?php
-            print "&copy; - Under - ".$_copy." c'est l'heures";
+            print "<strong>&copy; - Under - ".$_copy." c'est l'heure</strong>";
         ?>
     </footer>
+    <?php
+        include_once "./src/tab_php.inc.php";
+    ?>
  
 </body>
 </html>

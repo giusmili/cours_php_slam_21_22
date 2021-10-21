@@ -9,5 +9,11 @@ Le langage PHP fut créé en 1994 par Rasmus Lerdorf pour son site web. C’éta
 	print "Votre Navigateur est : ".$_SERVER['HTTP_USER_AGENT'];
 	print "Votre Adresse Serveur est :".$_SERVER['REMOTE_ADDR'];
 	print "Nous le : ".date("d/m/Y")." Il est : ".date("H:i:s")." Sec";
-    ?>
+    
+	foreach (user_code as $key => $value) {
+       //condition pour afficher le contact dans un lien
+       $key!="mail" ? print "<li>".$key." : ".$value."</li>" : print '<li>'.$key.' : <a href="mailto:'.$value.'">contact</a></li>';
+       
+   }
+   ?>
 ```
